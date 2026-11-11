@@ -1,0 +1,4 @@
+config,min_samples,eps_m,n_clusters,pct_ruido,pct_maior_cluster,silhouette_media,silhouette_dp,extensao_mediana_m,extensao_media_pond_m,pct_acid_clusters_>2km,cobertura_25_em_24_%,cobertura_24_em_25_%
+A,10,100,1620,35.7,3.7,0.271,0.006,241.0,1100.0,15.5,87.4,86.9
+B,20,150,605,40.3,5.0,0.191,0.006,454.0,2106.0,37.6,90.5,91.0
+C,10,250,117,2.3,57.4,-0.584,0.013,564.0,31478.0,96.3,,

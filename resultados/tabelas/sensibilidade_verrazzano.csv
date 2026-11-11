@@ -1,0 +1,5 @@
+config,versao,n_clusters,pct_ruido,pct_maior_cluster,tamanho_mediano,ARI_vs_com
+A,com ponte,1620,35.7,3.7,17.0,
+A,sem ponte,1620,35.8,3.7,17.0,1.0
+B,com ponte,605,40.3,5.0,36.0,
+B,sem ponte,605,40.5,5.0,36.0,1.0
