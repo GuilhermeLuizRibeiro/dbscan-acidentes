@@ -29,7 +29,7 @@ O portal da NYC pode corrigir ou complementar registros antigos. Se você quiser
 
 ## Observações sobre os dados
 
-- `collision_id` e `zip_code` são lidos como **texto** (`str`), para não perder zeros à esquerda. O notebook e o script usam a mesma configuração ao ler a API e os CSVs.
+- `collision_id` e `zip_code` são lidos como **texto** (`str`), para não perder zeros à esquerda.
 - `crash_date` é lido como texto e convertido para data no notebook.
 - A coluna `location` é redundante com `latitude` e `longitude` e é descartada na limpeza.
 - Uma parte das colisões não tem coordenadas (ou vem com 0). Esses registros permanecem nos arquivos `_bruto` e só são removidos na limpeza; o funil de volumetria está em `resultados/tabelas/funil_volumetria.csv`.
