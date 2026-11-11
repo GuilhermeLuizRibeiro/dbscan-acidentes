@@ -7,7 +7,7 @@ Esta pasta guarda as bases usadas no projeto de clusterização (DBSCAN) de acid
 [Motor Vehicle Collisions – Crashes](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95), do NYC Open Data (identificador `h9gi-nx95`). Os dados são obtidos pela API Socrata do portal, filtrando pela coluna `crash_date`.
 
 | Arquivo | Conteúdo |
-|---|---|---|
+|---|---|
 | `colisoes_2024_bruto.csv` | Todas as linhas de 2024, sem nenhum tratamento. Usado na análise de estabilidade 2024 × 2025. |
 | `colisoes_2025_bruto.csv` | Todas as linhas de 2025, sem nenhum tratamento. Base principal da análise. |
 | `base-processada/colisoes_2025_limpo.csv` | 2025 sem coordenadas ausentes, sem coordenadas zero e restrito à caixa geográfica de NYC. |
