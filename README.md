@@ -21,15 +21,17 @@ O DBSCAN é ajustado apenas sobre latitude e longitude, com distância **haversi
 - **Extração:** 11 de novembro de 2026. O portal pode corrigir registros antigos, então uma nova extração pode alterar os números levemente.
 - **Volumetria (2025):**
 
+Cada linha da tabela mostra quantas linhas **restam** após a etapa de limpeza indicada:
+
 | Etapa | Linhas | % do total |
 |---|---:|---:|
 | Linhas baixadas | 85.559 | 100,0 |
-| Com latitude e longitude | 84.833 | 99,2 |
-| Sem coordenadas (0, 0) | 82.918 | 96,9 |
-| Dentro da caixa geográfica de NYC | 82.918 | 96,9 |
-| Pontos únicos (lat, lon) | 44.111 | 51,6 |
+| Após remover coordenadas ausentes (com latitude e longitude) | 84.833 | 99,2 |
+| Após remover coordenadas (0, 0) | 82.918 | 96,9 |
+| Após filtrar a caixa geográfica de NYC | 82.918 | 96,9 |
+| Pontos únicos (lat, lon) — diagnóstico, não é filtro | 44.111 | 51,6 |
 
-Em 2024 restam 83.697 linhas válidas após o mesmo tratamento. Detalhes sobre os arquivos e a regra de download estão em [`data/README.md`](data/README.md).
+Foram removidas 726 linhas sem coordenadas e 1.915 linhas em (0, 0); nenhuma ficou fora da caixa de NYC. Em 2024 restam 83.697 linhas válidas após o mesmo tratamento. Detalhes sobre os arquivos e a regra de download estão em [`data/README.md`](data/README.md).
 
 ## Como reproduzir
 
@@ -49,6 +51,7 @@ Abra `dbscan-acidentes.ipynb` e execute **Kernel → Restart & Run All**.
 - O notebook usa caminhos relativos (`../data`, `../resultados`), então o diretório de trabalho deve ser `notebooks/`.
 - Os CSVs brutos já estão em `data/`, então a execução é **offline**. Se um arquivo não existir, o notebook baixa o ano da API e o salva em `data/`. Para atualizar a base, apague o CSV do ano e rode tudo de novo.
 - Todas as tabelas e figuras em `resultados/` são regeneradas pelo notebook.
+- A pasta `data/base-processada/` (2025 já limpo) **não vem no repositório**: ela é gerada pelo notebook na etapa de limpeza e está no `.gitignore`.
 
 ## Metodologia
 
