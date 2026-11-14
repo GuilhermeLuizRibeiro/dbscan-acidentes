@@ -1,5 +1,7 @@
 matplotlib==3.11.2
+matplotlib-inline==0.2.2
 numpy==2.5.3
 pandas==3.0.5
 requests==2.34.2
 scikit-learn==1.9.1
+hdbscan==0.8.44

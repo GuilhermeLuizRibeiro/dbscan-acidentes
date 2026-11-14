@@ -10,9 +10,9 @@ Esta pasta guarda as bases usadas no projeto de clusterização (DBSCAN) de acid
 |---|---|
 | `colisoes_2024_bruto.csv` | Todas as linhas de 2024, sem nenhum tratamento. Usado na análise de estabilidade 2024 × 2025. |
 | `colisoes_2025_bruto.csv` | Todas as linhas de 2025, sem nenhum tratamento. Base principal da análise. |
-| `base-processada/colisoes_2025_limpo.csv` | 2025 sem coordenadas ausentes, sem coordenadas zero e restrito à caixa geográfica de NYC. |
+| `base-processada/colisoes_2025_limpo.csv` | **Gerado pelo notebook** (não vem no repositório; a pasta está no `.gitignore`). 2025 sem coordenadas ausentes, sem coordenadas zero e restrito à caixa geográfica de NYC. |
 
-Os arquivos `_bruto` não são modificados pelo notebook. Toda limpeza acontece em memória, e o resultado vai para `base-processada/`.
+Os arquivos `_bruto` não são modificados pelo notebook e são os únicos versionados. Toda limpeza acontece em memória, e o resultado é gravado pelo notebook em `base-processada/` (a pasta é criada automaticamente e não precisa ser baixada nem versionada).
 
 ## Como o notebook usa estes arquivos
 
