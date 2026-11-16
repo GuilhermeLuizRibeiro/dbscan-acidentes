@@ -4,7 +4,6 @@ Seminário avaliativo de **Aprendizagem de Máquina Não Supervisionada** (Grupo
 
 - **Disciplina:** Data Science  
 - **Docente:** Ricardo Stegh Camati
-- **Integrantes:**
 
 ## Pergunta de pesquisa
 
